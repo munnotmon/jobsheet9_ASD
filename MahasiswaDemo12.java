@@ -12,6 +12,7 @@ public class MahasiswaDemo12 {
             System.out.println("3. Melihat Tugas Teratas");
             System.out.println("4. Melihat Daftar Tugas");
             System.out.println("5. Melihat Tugas Terbawah");
+            System.out.println("6. Menghitung Jumlah Tugas");
             System.out.println("0. Keluar");
             System.out.print("Pilih menu: ");
             pilih = sc12.nextInt();
@@ -55,6 +56,9 @@ public class MahasiswaDemo12 {
                     if (pertama != null) {
                         System.out.println("Tugas pertama dikumpulkan oleh " + pertama.nama);
                     }
+                    break;
+                case 6:
+                    System.out.println("Jumlah tugas yang sudah dikumpulkan: " + stack.jumlahTugas());
                     break;
                 case 0:
                     System.out.println("Terima kasih telah menggunakan program.");

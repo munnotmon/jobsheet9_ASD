@@ -24,6 +24,10 @@ public class StackTugasMahasiswa12 {
         }
     }
 
+    public int jumlahTugas() {
+        return top + 1;
+    }
+
     public void push(Mahasiswa12 mhs) {
         if (!isFull()) {
             top++;
