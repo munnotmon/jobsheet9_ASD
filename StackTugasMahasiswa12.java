@@ -31,7 +31,7 @@ public class StackTugasMahasiswa12 {
         } else {
             System.out.println("Stack penuh! Tidak bisa menambahkan tugas lagi.");
         }
-    }
+    }    
 
     public Mahasiswa12 pop() {
         if (!isEmpty()) {
@@ -54,7 +54,7 @@ public class StackTugasMahasiswa12 {
     }
 
     public void print() {
-        for (int i = 0; i <= top; i++) {
+        for (int i = top; i >= 0; i--) {
             System.out.println(stack[i].nama + "\t" + stack[i].nim + "\t" + stack[i].kelas);
         }
         System.out.println("");
